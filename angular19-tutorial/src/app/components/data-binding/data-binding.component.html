@@ -1,0 +1,48 @@
+<div class="row">
+    <div class="col-6">
+        1. interpolation
+        <p>firstName => {{selectedName}}</p>
+        <div>
+            <p>currentAge => {{currentAge}}</p>
+        </div>
+        <p>isAlive => {{isAlive}}</p>
+        <p>currentDate => {{currentDate}}</p>
+    </div>
+
+    <div class="col-6">
+        property biding
+        <input type="text" [value]="firstName" name="" id="">
+        <input type="text" [placeholder]="myPlaceholder" name="" id="">
+
+        <div [class]="myDivClass" style="height:100px; width:150px">
+            
+        </div>
+
+
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-3">
+        <button class="btn btn-success" (click)="showWelcomeMessage()">Show Welcome Text</button>
+    </div>
+
+    <select (change)="onSingerChanges()">
+        <option value="Amy Winehouse">Amy Winehouse</option>
+        <option value="Kim Carnes">Kim Carnes</option>
+        <option value="Bette Davis">Bette Davis</option>
+    </select>
+</div>
+<div class="row">
+    <div class="col-3">
+        <input type="text" [(ngModel)]="firstName">
+    </div>
+    <div class="col-3">
+        <select [(ngModel)]="selectedName">
+            <option value="Amy Winehouse">Amy Winehouse</option>
+            <option value="Kim Carnes">Kim Carnes</option>
+            <option value="Bette Davis">Bette Davis</option>
+        </select>
+        - {{selectedName}}
+    </div>
+</div>
