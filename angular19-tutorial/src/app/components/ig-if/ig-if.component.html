@@ -1,0 +1,23 @@
+<div class="row">
+    <div class="col-3">
+        <div class="bg-success p-3 text-center" *ngIf="visibleDiv">
+            Div de Teste
+        </div>
+    </div>
+    <div class="col-3">
+        <div class="bg-primary p-3 text-center" *ngIf="name1 == name2">
+            Div de Teste 2
+        </div>
+    </div>
+</div>
+
+<div class="row pt-2">
+    <div class="col-3">
+        <button [class]="showClass" (click)="showDiv()">{{text}}</button>
+    </div>
+    <div class="col-3">
+        <input type="text" [(ngModel)]="name1">
+        <input type="text" [(ngModel)]="name2">
+        <p>{{name1 == name2}}</p>
+    </div>
+</div>
