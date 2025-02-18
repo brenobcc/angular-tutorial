@@ -1,0 +1,11 @@
+<div class="row">
+    <div class="col-3 pt-3" [ngStyle]="{'background-color': divColor, 'color': 'green'}">
+        Div 1
+    </div>
+</div>
+<div class="row pt-4">
+    <div class="col-3">
+        <button class="btn" (click)="addColor('red')">Red</button>
+        <button class="btn" (click)="addColor('blue')">Blue</button>
+    </div>
+</div>

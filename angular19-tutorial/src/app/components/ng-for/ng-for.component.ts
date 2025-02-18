@@ -20,6 +20,5 @@ export class NgForComponent {
 
   getKeys(): string[] {
     return Object.keys(this.singerArray[0]);
-}
-
+  }
 }
